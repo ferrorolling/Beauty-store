@@ -14,7 +14,7 @@
     margin:10px 2px 2px 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;  
+    justify-content: center;
     border-radius: 3px;
 }
 
