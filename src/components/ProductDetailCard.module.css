@@ -29,3 +29,23 @@
     font-size: 1.4em;
 }
 
+
+
+@media (max-width: 1230px) {
+    .imagen {
+        height: 350px;  
+    }
+    
+   
+  }
+
+
+  
+@media (max-width: 780px) {
+    .imagen {
+        height: 300px; 
+    }
+         
+    }
+
+ 
