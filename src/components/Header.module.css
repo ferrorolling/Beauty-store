@@ -1,0 +1,37 @@
+.greenLine {
+    background-color: #9bdcd2;
+    height: 30px;
+    font-family: mulish;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.logo {
+    height: 150px;
+}
+
+.foto {
+    height: 450px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+@media (max-width: 1000px) {
+    .foto {
+        height: auto;
+        object-fit: scale-down;
+    }
+
+   
+  }
+
+  @media (max-width: 800px) {
+    .greenLine {
+        font-size: 10px;
+    }
+  }
