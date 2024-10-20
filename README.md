@@ -1,8 +1,11 @@
-# React + Vite
+# Todo-list
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I made this fake store using the following API, https://dummyjson.com, to practice pagination, basic routing, and some hooks and custom hooks.
 
-Currently, two official plugins are available:
+* My intention is to add new functionalities in the future 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+My intention is to add new functionalities in the future. You can visit the project at the following link: .[Fake-store](https://fake-store-piklpdxm2-ferrodevs-projects.vercel.app/).
+
+<img src="https://github.com/user-attachments/assets/51744f86-81a7-4158-b1ca-6fb9cce4b53f" alt="desktop-design" width="900" />
+
+
