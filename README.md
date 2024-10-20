@@ -1,4 +1,4 @@
-# fake-store
+# fake store
 
 I made this fake store using the following API, https://dummyjson.com, to practice pagination, basic routing, and some hooks and custom hooks.
 
