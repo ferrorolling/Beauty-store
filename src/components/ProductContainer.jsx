@@ -2,15 +2,11 @@
 import { useState } from 'react';
 import { Pagination } from './Pagination';
 import { ProductCard } from './ProductCard';
-import {useProducts} from '../customHooks/useProducts'
-import {Link} from 'react-router-dom'
 
-export const ProductContainer = () => {
+export const ProductContainer = ({products, pages}) => {
 
-  
     const [currentPage,setCurrentPage] = useState(1);
     const [itemsPerPage, setitemsPerPage] = useState(3)
-    const {products, pages} = useProducts()
     const productsPages = products.slice((currentPage * itemsPerPage)-itemsPerPage, currentPage * itemsPerPage)
 
 

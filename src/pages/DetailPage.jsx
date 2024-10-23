@@ -1,10 +1,10 @@
 import { ProductDetailCard } from "../components/ProductDetailCard"
 
-const DetailPage = () => {
+const DetailPage = ({products, pages}) => {
  
     return (
       <> 
-        <ProductDetailCard />  
+        <ProductDetailCard products = {products} pages = {pages}/>  
       </>
     )
   }
