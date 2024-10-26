@@ -2,9 +2,26 @@
 import { Link } from 'react-router-dom';
 import styles from './ProductCard.module.css';
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
+import { ListProductContext } from '../context/listProductContext';
 
 
 export const ProductCard = ({product}) => {
+
+  const {setListProduct, listProduct} = useContext(ListProductContext)
+
+  const handleClick = (product)=>{ 
+    const productExists = listProduct.find((p) => p.id === product.id)
+
+  if(productExists){
+      const products = listProduct.map(item => item.id == product.id ? {...item, quantity: item.quantity + 1} : item);
+      setListProduct(products)
+  } else {
+      setListProduct([...listProduct,{...product, quantity: 1}]) 
+  }
+
+  }
+
   return (
  
    <div className ={styles.card}>
@@ -16,7 +33,7 @@ export const ProductCard = ({product}) => {
         <p>Price: ${product.price}</p>
        </div>
        </Link>
-        <button>add to card</button>
+        <button onClick={()=> handleClick (product)}>add to card</button>
     </div>
   )
 }

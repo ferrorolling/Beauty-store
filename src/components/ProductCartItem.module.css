@@ -1,0 +1,71 @@
+.card {
+    display: flex;
+    width:450px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-top: 1px #c5c5c5 solid;
+    padding :0 10px 0 10px;
+ 
+}
+
+.imagen {
+    height: 100px;  
+}
+
+.button{
+    background-color: black;
+    color:aliceblue;
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    box-shadow: none;
+    font-size: bold;
+    margin-right: 15px;
+        
+}
+
+.imageContainer {
+    width: 100px;
+    align-items: center;
+
+}
+
+.titleContainer {
+    flex: 1;             
+}
+
+.titleButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+@media screen and (max-width: 516px) {
+    .card {
+        width: 98%;   
+    }
+    .titleButtonContainer {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 60px;
+        height: 25px;
+    }
+
+    .productTitle {
+        width: 95%;
+    }
+
+    .imageContainer {
+        width: 60px;
+        align-items: center;
+    
+    }
+
+
+}
+   

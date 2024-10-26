@@ -7,12 +7,13 @@ import DetailPage from './pages/DetailPage';
 import { useProducts } from './customHooks/useProducts';
 
 
+
 function App() {
 
 const {products, pages} = useProducts()
 
   return (
-    <>   
+    <> 
       <Router>
         <Header />
         <Routes>

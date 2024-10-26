@@ -15,8 +15,7 @@ export const ProductContainer = ({products, pages}) => {
         <div className="product__container">
             {products.length > 0 ? 
             (
-            productsPages.map(product => (
-                
+            productsPages.map(product => ( 
                 <ProductCard 
                 key={product.title} 
                 product={product}
