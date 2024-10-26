@@ -4,7 +4,7 @@ import fondo from '../assets/fragance.jpg';
 import styles from './Header.module.css';
 import Listbag from './Listbag';
 import { useContext, useState } from 'react';
-import { ListProductContext } from '../context/listProductContext';
+import { ListProductContext } from '../context/ListProductContext';
 
 const Header = () => {
  const {listProduct} = useContext(ListProductContext)
