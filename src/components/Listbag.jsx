@@ -1,7 +1,7 @@
 import { useContext } from 'react'
-import styles from './listbag.module.css'
+import styles from './Listbag.module.css'
 import { ListProductContext } from '../context/listProductContext'
-import { ProductCartItem } from './productCartItem'
+import { ProductCartItem } from './ProductCartItem'
 
 
 export const Listbag = ({style}) => {
