@@ -26,12 +26,12 @@ export const ProductCard = ({product}) => {
  
    <div className ={styles.card}>
        <Link key ={product.id} to={`/detail/${product.id}`}>
-      <div>
-       <img className={styles.imagen} src={product.images[0]} alt={product.title} />
-        <h3 className={styles.titulo}>{product.title}</h3>
-        <p>{product.brand}</p>
-        <p>Price: ${product.price}</p>
-       </div>
+        <div>
+        <img className={styles.imagen} src={product.images[0]} alt={product.title} />
+            <h3 className={styles.titulo}>{product.title}</h3>
+            <p>{product.brand}</p>
+            <p>Price: ${product.price}</p>
+          </div>
        </Link>
         <button onClick={()=> handleClick (product)}>add to card</button>
     </div>

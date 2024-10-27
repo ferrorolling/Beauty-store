@@ -5,8 +5,7 @@ import { ProductCartItem } from './ProductCartItem'
 
 
 export const Listbag = ({style}) => {
-
-  
+ 
    const {listProduct}= useContext(ListProductContext)
    const totalPrice = Number.parseFloat(listProduct.reduce((total, product) => total + product.quantity * product.price, 0)).toFixed(2);
 

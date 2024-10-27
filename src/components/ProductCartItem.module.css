@@ -9,21 +9,32 @@
  
 }
 
+.deleteImage {
+    height: 40px;
+    
+}
+
+.deleteImage:hover {
+    opacity: 0.6;    
+}
+
 .imagen {
     height: 100px;  
 }
 
+
+.button:active {
+    transform: translateY(2px); /* Desplaza el botón hacia abajo */
+  }
+
 .button{
-    background-color: black;
-    color:aliceblue;
-    height: 30px;
-    width: 30px;
-    border-radius: 7px;
-    box-shadow: none;
-    font-size: bold;
+    background-color: transparent;
+    border: none;
     margin-right: 15px;
-        
+    transition: transform 0.1s ease;       
 }
+
+
 
 .imageContainer {
     width: 100px;
@@ -46,6 +57,7 @@
 @media screen and (max-width: 516px) {
     .card {
         width: 98%;   
+        height: 300px;
     }
     .titleButtonContainer {
         flex-direction: column;
@@ -56,9 +68,7 @@
         height: 25px;
     }
 
-    .productTitle {
-        width: 95%;
-    }
+  
 
     .imageContainer {
         width: 60px;

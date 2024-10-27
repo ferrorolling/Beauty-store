@@ -16,14 +16,22 @@
 }
 
 .bagButton{
-    background: none;  
+    background-color: transparent;  
     cursor: pointer;
     border: none;
+    transition: transform 0.1s ease;
 }
 
+.bagButton:active {
+    transform: translateY(2px); 
+  }
+
 .bag {
-    height: 40px;
-  
+    height: 40px;  
+}
+
+.bag:hover {
+    opacity: 0.6; 
 }
 
 .bagNumber {
@@ -35,20 +43,22 @@
     width: 22px;               
     height: 22px;               
     text-align: center;         
-    line-height: 22px;               
+    line-height: 25px;               
     font-size: 14px;   
     position:relative;
     right: 20px;
+    
         
   }
 
 .logo {
     height: 150px;
     margin-top: 30px;
+    
 }
 
 .foto {
-    height: 450px;
+    height: 420px;
     width: 100%;
     background-size: cover;
     border-radius: 3px;
